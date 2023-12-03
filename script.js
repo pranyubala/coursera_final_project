@@ -32,3 +32,13 @@ function loadRandomSpecials() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Show loading overlay
+    document.getElementById("loading-overlay").style.display = "flex";
+
+    // Hide the loading overlay after 3 seconds
+    setTimeout(function () {
+        document.getElementById("loading-overlay").style.display = "none";
+  }, 400);
+});
+ 
